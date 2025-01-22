@@ -1,0 +1,175 @@
+.profile {
+
+  display: flex;
+
+padding: 34px 0 20px;
+border-bottom: 1px rgba(33,33,33,.4) solid;
+
+
+
+
+}
+
+.profile__add-button {
+
+  margin-left: auto;
+width: 149px;
+height: 52px;
+margin-top: auto;
+background-color: #212121;
+color: white;
+border-radius: 8px;
+align-items: center;
+border: none;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 1;
+
+
+}
+
+
+.profile__add-icon {
+
+  margin-right: 8px;
+  width: 12px;
+  height: 12px;
+}
+
+
+
+
+
+.profile__edit-button {
+
+  margin-top: auto;
+background-color: transparent;
+border: none;
+display: flex;
+gap: 8px;
+color: rgba(33, 33, 33, .7);
+
+font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 1;
+
+
+
+
+}
+
+
+
+
+.profile__text {
+
+  margin: 0;
+}
+
+.profile__name {
+  font-family: Poppins;
+font-size: 32px;
+font-weight: 500;
+line-height: 1;
+margin:0;
+text-overflow: ellipsis;
+  overflow: hidden;
+  line-clamp: 3;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: 420px;
+}
+
+.profile__description {
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-clamp: 3;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: 420px;
+
+margin: 12px 0 0;
+
+}
+
+
+.profile__avatar {
+  margin-right: 20px;
+  width: 190px;
+  height: 190px;
+  border-radius: 10px;
+
+}
+
+.profile__column {
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+@media screen and (max-width: 627px) {
+
+.profile {
+
+  flex-direction: column;
+  max-width: 288px;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0 0;
+  bottom-border: stretch;
+
+}
+
+.profile__avatar {
+
+  margin-right: 0;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 12px;
+}
+
+.profile__name {
+
+  font-size: 20px;
+  font-weight: 500;
+  max-width: 288px;
+}
+.profile__edit-button {
+
+  justify-content: center;
+  padding-top: 32px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.profile__add-button {
+
+  margin: 0 0 20px;
+  width: 288px;
+  height: 52px;
+  font-size: 16px;
+
+}
+
+
+.profile__avatar {
+
+width: 80px;
+  height: 80px;
+
+}
+
+.profile__description{
+font-size: 16px;
+font-weight: 500;
+  margin-top: 6px;
+  max-width: 288px;
+}
+}
