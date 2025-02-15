@@ -65,7 +65,7 @@ function closeModal() {
   profileEditModal.classList.remove("modal_opened");
 }
 
-function profileFormEdit(evt) {
+function handleProfileFormEdit(evt) {
   evt.preventDefault();
   profileDescription.textContent = editModalDescription.value;
   profileNameElement.textContent = editModalName.value;
@@ -76,7 +76,7 @@ profileEditButton.addEventListener("click", openModal);
 
 editModal.addEventListener("click", closeModal);
 
-profileFormElement.addEventListener("submit", profileFormEdit);
+profileFormElement.addEventListener("submit", handleProfileFormEdit);
 
 for (let i = 0; i < initialCards.length; i++) {
   const cardElement = getCardElement(initialCards[i]);
