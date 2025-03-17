@@ -59,49 +59,94 @@
           <div class="cards__list">
             <template id="card-temp">
               <div class="card">
-                <img
-                  src=""
-                  alt=""
-                  class="card__image"
-                />
+                <img src="" alt="" class="card__image" />
+                <button type="button" class="card__delete-button"></button>
 
                 <div class="card__content">
                   <h2 class="card__title"></h2>
                   <button type="button" class="card__like-button"></button>
                 </div>
               </div>
-
             </template>
-
-
-
           </div>
         </section>
       </main>
       <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
-          <button type="submit" class="modal__close-btn">
-            <img src="./images/X.svg" alt="Close" class="close-icon">
+          <button type="button" class="modal__close-btn">
+            <img src="./images/X.svg" alt="Close" class="close-icon" />
           </button>
           <h2 class="modal__title">Edit Profile</h2>
           <form name="edit-profile" class="modal__form">
             <label for="profile-name-input" class="modal__label">
               Name
-              <input id="profile-name-input" type="text" class="modal__input" placeholder="Name">
-
+              <input
+                id="profile-name-input"
+                type="text"
+                class="modal__input"
+                placeholder="Name"
+              />
             </label>
             <label for="profile-name-description" class="modal__label">
               Description
-              <input id="profile-name-description" type="text" class="modal__input" placeholder="Description">
+              <input
+                id="profile-name-description"
+                type="text"
+                class="modal__input"
+                placeholder="Description"
+              />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
         </div>
       </div>
+
+      <div class="modal" id="add-card-modal">
+        <div class="modal__container">
+          <button type="button" class="modal__close-btn">
+            <img src="./images/X.svg" alt="Close" class="close-icon" />
+          </button>
+          <h2 class="modal__title">New Post</h2>
+          <form name="add-card-form" class="modal__form">
+            <label for="add-card-link-input" class="modal__label">
+              Image Link
+              <input
+                id="add-card-link-input"
+                type="url"
+                name="link"
+                class="modal__input"
+                placeholder="Paste a link to picture"
+              />
+            </label>
+            <label for="add-card-name" class="modal__label">
+              <caption></caption>
+              <input
+                id="add-card-name-input"
+                type="text"
+                name="name"
+                class="modal__input"
+                placeholder="Type your caption"
+              />
+            </label>
+            <button type="submit" class="modal__submit-btn">Save</button>
+          </form>
+        </div>
+      </div>
+
       <footer class="footer page__section">
         <h3 class="footer__copy">2025 &copy; Lawrence</h3>
       </footer>
     </div>
-    <script src=./scripts/index.js defer></script>
+    <div class="modal" id="preview-modal">
+      <div class="modal__container modal__container_type_preview">
+        <button
+          type="button"
+          class="modal__close-btn modal__close_type_preview"
+        ></button>
+        <img class="modal__image" src="#" alt="" class="" />
+        <p class="modal__caption">Hello Sir</p>
+      </div>
+    </div>
+    <script src="./scripts/index.js" defer></script>
   </body>
 </html>
