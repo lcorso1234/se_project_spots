@@ -40,7 +40,7 @@
   height: 20px;
   border: none;
   background-color: transparent;
-  opacity: 40%;
+  opacity: 0.4;
   cursor: pointer;
   background-repeat: no-repeat;
 }
@@ -55,8 +55,8 @@
 }
 
 .card__like-button:hover {
-  opacity: 100%;
-  transition: 2s;
+  opacity: 1;
+  transition: 0.2s;
 }
 
 .card__delete-button {
