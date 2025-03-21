@@ -117,6 +117,7 @@ function handleCardSubmit(evt) {
   });
   cardList.prepend(cardElement);
   closeModal(cardModal);
+  cardForm.reset();
 }
 
 // Event listeners

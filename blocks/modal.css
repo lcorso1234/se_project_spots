@@ -75,7 +75,7 @@
   opacity: 1;
 }
 
-.modal__close_type_preview:hover {
+.modal__close-btn_type_preview:hover {
   background-image: url(../images/blackx.svg);
   width: 40px;
   height: 40px;
@@ -105,7 +105,7 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 17.6px;
-  opacity: 7;
+  opacity: 0.7;
 }
 
 .modal__input {
@@ -129,6 +129,7 @@
   background: #212121;
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 .modal__submit-btn:hover {
@@ -146,7 +147,7 @@
 
   .modal__label {
     gap: 8px;
-    opacity: 0;
+    opacity: 1;
     margin-bottom: 24px;
   }
 
@@ -157,7 +158,9 @@
 
   .modal__close-btn {
     right: 12px;
-    top: 12px;
+    top: -41px;
+    width: 40px;
+    height: 40px;
   }
 
   .modal__title {
