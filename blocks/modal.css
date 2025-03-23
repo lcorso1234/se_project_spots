@@ -67,7 +67,7 @@
   background-color: transparent;
 }
 
-.modal__close_type_preview {
+.modal__close-btn_type_preview {
   padding: 0;
   background-image: url(../images/closeicon.svg);
   top: 0;
@@ -77,8 +77,6 @@
 
 .modal__close-btn_type_preview:hover {
   background-image: url(../images/blackx.svg);
-  width: 40px;
-  height: 40px;
 }
 
 .modal__close-btn:hover {
@@ -190,6 +188,10 @@
     font-size: 16px;
     padding: 8px 12px;
     border-radius: 4px;
+  }
+
+  .close-icon {
+    margin: 55px 0 0 0;
   }
 
   .modal__close-btn_type_preview {

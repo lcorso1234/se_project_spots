@@ -51,7 +51,7 @@ const cardForm = cardModal.querySelector(".modal__form");
 // Preview modal elements (moved outside the function as per feedback)
 const previewModal = document.querySelector("#preview-modal");
 const previewModalCloseBtn = previewModal.querySelector(
-  ".modal__close_type_preview"
+  ".modal__close-btn_type_preview"
 );
 const previewImageEl = previewModal.querySelector(".modal__image");
 const previewModalCaptionEl = previewModal.querySelector(".modal__caption");
