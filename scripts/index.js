@@ -1,4 +1,4 @@
-// Initial cards array
+// Pass settings object to the validation functions that are called in this file
 const initialCards = [
   {
     name: "Val Thorens",
@@ -98,6 +98,10 @@ function openModal(modal) {
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
+  const formEl = modal.querySelector(".modal__form");
+  const inputList = formEl.querySelectorAll("input");
+
+  resetValidation(formEl, inputList);
 }
 
 // Event handlers
