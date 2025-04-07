@@ -101,7 +101,7 @@ function closeModal(modal) {
   const formEl = modal.querySelector(".modal__form");
   const inputList = formEl.querySelectorAll("input");
 
-  resetValidation(formEl, inputList);
+  resetValidation(formEl, inputList, settings);
 }
 
 // Event handlers
