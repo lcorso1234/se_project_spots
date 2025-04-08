@@ -123,11 +123,11 @@
   letter-spacing: 0%;
 }
 
-.modal_input_type_error {
+.modal__input_type_error {
   border: 1px solid #ff000099;
 }
 
-.modal_input_type_error:hover {
+.modal__input_type_error:hover {
   border: 1px solid #ff000099;
 }
 .modal__input:hover {

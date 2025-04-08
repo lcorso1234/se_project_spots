@@ -94,14 +94,12 @@ function getCardElement(data) {
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
+  document.addEventListener("keydown", handleEscapeKey);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
-  const formEl = modal.querySelector(".modal__form");
-  const inputList = formEl.querySelectorAll("input");
-
-  resetValidation(formEl, inputList, settings);
+  document.removeEventListener("keydown", handleEscapeKey);
 }
 
 // Event handlers
@@ -109,6 +107,9 @@ function handleProfileFormEdit(evt) {
   evt.preventDefault();
   profileNameElement.textContent = editModalName.value;
   profileDescription.textContent = editModalDescription.value;
+  const formEl = profileEditModal.querySelector(".modal__form");
+  const inputList = formEl.querySelectorAll("input");
+  resetValidation(formEl, inputList, settings);
   closeModal(profileEditModal);
 }
 
@@ -122,6 +123,18 @@ function handleCardSubmit(evt) {
   cardList.prepend(cardElement);
   closeModal(cardModal);
   cardForm.reset();
+  const formEl = cardModal.querySelector(".modal__form");
+  const inputList = formEl.querySelectorAll("input");
+  resetValidation(formEl, inputList, settings);
+}
+
+function handleEscapeKey(evt) {
+  if (evt.key === "Escape") {
+    const openedModal = document.querySelector(".modal_opened");
+    if (openedModal) {
+      closeModal(openedModal);
+    }
+  }
 }
 
 // Event listeners
@@ -129,6 +142,30 @@ profileEditButton.addEventListener("click", () => {
   editModalName.value = profileNameElement.textContent;
   editModalDescription.value = profileDescription.textContent;
   openModal(profileEditModal);
+});
+// profileEditModal.addEventListener("click", (evt) => {
+//   if (evt.target.classList.contains("modal")) {
+//     closeModal(profileEditModal);
+//   }
+// });
+
+// previewModal.addEventListener("click", (evt) => {
+//   if (evt.target.classList.contains("modal")) {
+//     closeModal(previewModal);
+//   }
+// });
+
+// cardModal.addEventListener("click", (evt) => {
+//   if (evt.target.classList.contains("modal")) {
+//     closeModal(cardModal);
+//   }
+// });
+document.querySelectorAll(".modal").forEach((modal) => {
+  modal.addEventListener("click", (evt) => {
+    if (evt.target.classList.contains("modal")) {
+      closeModal(modal);
+    }
+  });
 });
 
 editModalCloseBtn.addEventListener("click", () => closeModal(profileEditModal));
