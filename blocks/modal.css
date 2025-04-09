@@ -135,7 +135,7 @@
   transition: ease-in-out 0.7s;
 }
 
-.modal__submit-btn-inactive {
+.modal__submit-btn_inactive {
   opacity: 0.5;
   cursor: not-allowed;
 }

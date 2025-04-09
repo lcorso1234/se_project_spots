@@ -109,7 +109,7 @@ function handleProfileFormEdit(evt) {
   profileDescription.textContent = editModalDescription.value;
   const formEl = profileEditModal.querySelector(".modal__form");
   const inputList = formEl.querySelectorAll("input");
-  resetValidation(formEl, inputList, settings);
+
   closeModal(profileEditModal);
 }
 
@@ -125,7 +125,7 @@ function handleCardSubmit(evt) {
   cardForm.reset();
   const formEl = cardModal.querySelector(".modal__form");
   const inputList = formEl.querySelectorAll("input");
-  resetValidation(formEl, inputList, settings);
+  disableButton(evt.submitter, settings);
 }
 
 function handleEscapeKey(evt) {
@@ -141,6 +141,11 @@ function handleEscapeKey(evt) {
 profileEditButton.addEventListener("click", () => {
   editModalName.value = profileNameElement.textContent;
   editModalDescription.value = profileDescription.textContent;
+  resetValidation(
+    profileFormElement,
+    [editModalName, editModalDescription],
+    settings
+  );
   openModal(profileEditModal);
 });
 // profileEditModal.addEventListener("click", (evt) => {
