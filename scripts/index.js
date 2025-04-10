@@ -107,7 +107,7 @@ function handleProfileFormEdit(evt) {
   evt.preventDefault();
   profileNameElement.textContent = editModalName.value;
   profileDescription.textContent = editModalDescription.value;
-  const formEl = profileEditModal.querySelector(".modal__form");
+
   const inputList = formEl.querySelectorAll("input");
 
   closeModal(profileEditModal);
@@ -123,7 +123,7 @@ function handleCardSubmit(evt) {
   cardList.prepend(cardElement);
   closeModal(cardModal);
   cardForm.reset();
-  const formEl = cardModal.querySelector(".modal__form");
+
   const inputList = formEl.querySelectorAll("input");
   disableButton(evt.submitter, settings);
 }
