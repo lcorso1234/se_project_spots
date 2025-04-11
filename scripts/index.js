@@ -108,8 +108,6 @@ function handleProfileFormEdit(evt) {
   profileNameElement.textContent = editModalName.value;
   profileDescription.textContent = editModalDescription.value;
 
-  const inputList = formEl.querySelectorAll("input");
-
   closeModal(profileEditModal);
 }
 
@@ -124,7 +122,6 @@ function handleCardSubmit(evt) {
   closeModal(cardModal);
   cardForm.reset();
 
-  const inputList = formEl.querySelectorAll("input");
   disableButton(evt.submitter, settings);
 }
 
