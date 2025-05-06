@@ -1,3 +1,11 @@
+import {
+  settings,
+  enableValidation,
+  resetValidation,
+} from "../scripts/validation.js";
+
+import "./index.css";
+
 // Pass settings object to the validation functions that are called in this file
 const initialCards = [
   {
@@ -144,7 +152,9 @@ profileEditButton.addEventListener("click", () => {
     settings
   );
   openModal(profileEditModal);
+  console.log("Edit button clicked");
 });
+
 // profileEditModal.addEventListener("click", (evt) => {
 //   if (evt.target.classList.contains("modal")) {
 //     closeModal(profileEditModal);
@@ -183,3 +193,5 @@ initialCards.forEach((item) => {
   const cardElement = getCardElement(item);
   cardList.prepend(cardElement);
 });
+
+enableValidation(settings);
