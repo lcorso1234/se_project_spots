@@ -159,7 +159,7 @@ function handleDeleteSubmit(evt) {
     })
     .catch(console.error)
     .finally(() => {
-      setButtonText(submitBtn, false, "Yes", "Deleting...");
+      setButtonText(submitBtn, false, "Delete", "Deleting...");
     });
 }
 
@@ -226,7 +226,7 @@ function handleCardSubmit(evt) {
     })
     .catch(console.error)
     .finally(() => {
-      setButtonText(submitBtn, false, "Create", "Saving...");
+      setButtonText(submitBtn, false, "Save", "Saving...");
     });
 }
 
@@ -272,7 +272,7 @@ api
 
     cards.forEach((card) => {
       const cardElement = getCardElement(card);
-      cardList.prepend(cardElement);
+      cardList.append(cardElement);
     });
   })
   .catch(console.error);
