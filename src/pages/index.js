@@ -7,6 +7,7 @@ import {
 import "./index.css";
 import Api from "../utils/Api.js";
 import { setButtonText } from "../utils/helpers.js";
+import { disableButton } from "../scripts/validation.js";
 
 // Profile elements
 const profileEditButton = document.querySelector(".profile__edit-button");
@@ -223,6 +224,7 @@ function handleCardSubmit(evt) {
       cardList.prepend(cardElement);
       closeModal(cardModal);
       cardForm.reset();
+      disableButton();
     })
     .catch(console.error)
     .finally(() => {
