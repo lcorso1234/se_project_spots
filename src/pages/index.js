@@ -224,7 +224,7 @@ function handleCardSubmit(evt) {
       cardList.prepend(cardElement);
       closeModal(cardModal);
       cardForm.reset();
-      disableButton();
+      disableButton(submitBtn, settings);
     })
     .catch(console.error)
     .finally(() => {
