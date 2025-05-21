@@ -22,8 +22,8 @@ Deployment link: https://lcorso1234.github.io/se_project_spots/
 
 ## Video Tutorial
 
-Video link: https://www.loom.com/share/a3970b7f4dec454d9d7817b3b454daf2?sid=5000fbac-9880-40b8-aedc-624129964ca0
+Video link: https://www.loom.com/share/63c7d8e9c9c74244ac18604fac9d7dae?sid=066c6126-8b87-4a2b-aa03-0089f3c10f20
 
 **Figma**
 
-- [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+- (https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
